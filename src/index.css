@@ -5,8 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vh;
-  height: 100;
 }
 
 code {
@@ -43,4 +41,17 @@ code {
   /* background-color: grey; */
   /* margin: 10px; */
   text-align: left;
+}
+.cart-item-action{
+  display: flex;
+  width:40%;
+  margin-top: 10px;
+}
+.action-button{
+  width: 8%;
+  height: 8%;
+  margin-right: 5px;
+}
+.action-button:hover{
+  cursor: pointer;
 }
