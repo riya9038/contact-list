@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vh;
+  height: 100;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cart-item{
+  width: 50%;
+  height: 90%;
+  /* background-color: red; */
+  display: inline-flex;
+  margin: 50px;
+}
+.left-block{
+  width: 30%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+.left-block img{
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+} 
+.right-block{
+  width: 70%;
+  height: 100%;
+  /* background-color: green; */
+  /* padding: 0 20px; */
+}
+.right-block div{
+  width: 90%;
+  height: 20%;
+  /* background-color: grey; */
+  /* margin: 10px; */
+  text-align: left;
 }
