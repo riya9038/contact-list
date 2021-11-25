@@ -3,8 +3,13 @@ import React from 'react';
 const NavBar=(props)=>{
     return(
         <div style={styles.nav}>
+            
+            <div style={styles.cartName}> TechCart</div>
+            
             <div style={styles.cartBox}>
-                <img style={styles.cartIcon} src="https://cdn-icons.flaticon.com/png/512/2207/premium/2207569.png?token=exp=1636646844~hmac=7eec1cc1ca8e87081e70c4990e56b407" 
+                
+                <button onClick={props.addProduct}>Add a product</button>
+                <img style={styles.cartIcon} src="https://cdn-icons-png.flaticon.com/512/709/709640.png" 
                 alt="cart-icon"></img>
                 <span style={styles.count}>{props.count}</span>
             </div>
@@ -18,14 +23,20 @@ const styles={
         background: 'blue',
         display:'flex',
         alignItems: 'center',
-        justifyContent: 'flex-end'
+        justifyContent: 'space-between'
+    },
+    cartName:{
+        marginLeft: 10,
+        fontFamily: 'monospace',
+        fontSize: 25,
+        background: 'orange'
     },
     cartBox:{
-        width:50,
+        width:300,
         height:50,
         display:'flex',
         alignItems: 'center',
-        justifyContent: 'flex-start',
+        justifyContent: 'space-around',
         marginRight: 20,
         position:'relative'
     },
@@ -40,7 +51,7 @@ const styles={
         background:'yellow',
         position:'absolute',
         top: 0.5,
-        left: 20,
+        left: 245,
         textAlign:'center'
     }
 }
