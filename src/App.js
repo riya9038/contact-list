@@ -120,7 +120,7 @@ addProduct=()=>{
   firestore()
   .collection('Products')
   .add({
-    title:'watch',
+    title:'Watch',
     price: 99999,
     qty: 6,
     img:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/13036796/2021/1/6/bb6d18c9-39c1-4632-bc4a-f452606965ef1609906124788-WROGN-Men-Silver-Toned-Analogue-Watch-WRG00048A-802160990612-1.jpg"
