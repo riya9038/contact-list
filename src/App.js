@@ -62,6 +62,9 @@ onHandleDecreaseQuantity=(product)=>{
     console.log('Decrease the quantity of',product);
     const {products}= this.state;
     const index= products.indexOf(product);
+    {if(products[index].qty===0)
+      return;
+    }
     // {if(products[index].qty>0)
     // products[index].qty-=1;
     // }
