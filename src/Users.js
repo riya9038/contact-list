@@ -1,10 +1,11 @@
 import React from 'react';
 
+//returns the user information  
 const Users=(props)=>{
 
         const{name, phone, address,email,company,website}= props.user;
         return(
-            <div className="cart-item">
+            <div className="contact-list">
                 <div className="left-block">
                     <img style={styles.image} src="https://cdn-icons-png.flaticon.com/512/149/149071.png" />
                     <div style={ { color: 'black',paddingLeft:10} }>{name} </div>
@@ -14,35 +15,35 @@ const Users=(props)=>{
                 <div className="right-block">
                     
                     <div className="user-info" style={ { color: 'white' } }> Address: {address.city} 
-                        <div className="cart-item-action">
+                        <div className="contact-list-action">
                             <img className="action-button" 
                             src="https://cdn-icons.flaticon.com/png/512/3437/premium/3437179.png?token=exp=1640457658~hmac=b565137bbcb79c4ea0f4e12dffa44a0c" 
                             alt="address"/>
                         </div>
                     </div>
                     <div className="user-info" style={ { color: 'white' } }> Email: {email} 
-                        <div className="cart-item-action">
+                        <div className="contact-list-action">
                             <img className="action-button" 
                             src="https://cdn-icons-png.flaticon.com/512/732/732200.png" 
                             alt="email"/>
                         </div>
                     </div>
                     <div className="user-info" style={ { color: 'white' } }> Company: {company.name} 
-                        <div className="cart-item-action">
+                        <div className="contact-list-action">
                             <img className="action-button" 
                             src="https://cdn-icons-png.flaticon.com/512/3061/3061341.png" 
                             alt="company"/>
                         </div>
                     </div>
                     <div className="user-info" style={ { color: 'white' } }> Website: {website}
-                        <div className="cart-item-action">
+                        <div className="contact-list-action">
                             <img className="action-button" 
                             src="https://cdn-icons-png.flaticon.com/512/975/975645.png" 
                             alt="website"/>
                         </div>
                     </div>
                     <div className="user-info" style={ { color: 'white'} }> Phone: {phone} 
-                        <div className="cart-item-action">
+                        <div className="contact-list-action">
                             <img className="action-button" 
                             src="https://cdn-icons-png.flaticon.com/512/724/724664.png" 
                             alt="call"/>

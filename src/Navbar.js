@@ -1,14 +1,15 @@
 import React from 'react';
 
+//returns the navBar component
 const NavBar=(props)=>{
     return(
         <div style={styles.nav}>
             
-            <div className="heading" style={styles.cartName}>
+            <div className="heading" style={styles.Name}>
                 <img src="https://cdn-icons-png.flaticon.com/512/46/46646.png" alt="contact-book"></img>
                  <span>Contacts List</span></div>
             
-            <div style={styles.cartBox}>
+            <div style={styles.Box}>
                 <button className="add" onClick={props.addUser}>Add Contact</button>
                 <span style={styles.count}>{props.count} Users</span>
             </div>
@@ -25,23 +26,19 @@ const styles={
         justifyContent: 'space-between',
         boxShadow: '1px -1px 15px black inset'
     },
-    cartName:{
+    Name:{
         marginLeft: 10,
         fontFamily: 'cursive',
         fontSize: 25,
         // background: 'white'
     },
-    cartBox:{
+    Box:{
         width:300,
         height:50,
         display:'flex',
         alignItems: 'center',
         justifyContent: 'space-around',
         marginRight: 20,
-    },
-    cartIcon:{
-        width: 30,
-        height: 30,  
     },
     count:{
         width:80,

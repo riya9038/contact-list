@@ -4,6 +4,7 @@ import React from 'react';
 import NavBar from './Navbar';
 import ContactList from './ContactList';
 
+//renders the main app component
 class App extends React.Component{
   constructor(){
     super();
@@ -12,13 +13,14 @@ class App extends React.Component{
     }
 }
 
+//fetches the api for data
  componentDidMount(){
-
   fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(json => this.setState({ users: json },()=>console.log(this.state))); 
+      .then(json => this.setState({ users: json })); 
 }
 
+//deleting a user
 OnHandleDeleteUser=(id)=>{
   console.log('Deleted');
   const {users}= this.state;
@@ -33,6 +35,7 @@ OnHandleDeleteUser=(id)=>{
   })
 }
 
+//getting total count of the users
 getCount=()=>{
   const {users}= this.state;
   let count=0;
@@ -42,6 +45,7 @@ getCount=()=>{
   return count;
 }
 
+//creating a new user
 addUser=()=>{
   let newUser= {
     id: 11,
@@ -79,6 +83,8 @@ addUser=()=>{
     console.log('error',error);
   })
 }
+
+//updating the details of the user
 updateUser=(id)=>{
   const {users}= this.state;
   const newUser= users.filter((user)=> user.id===id);
@@ -98,8 +104,9 @@ updateUser=(id)=>{
     console.log('error',error);
   })
 }
+
 render() {
-  const {users, loading}= this.state;
+  const {users}= this.state;
   return (
     <div className="App">
       <NavBar
@@ -110,8 +117,6 @@ render() {
         users={users}
         updateUser={this.updateUser}
         OnHandleDeleteUser={this.OnHandleDeleteUser}/>
-        {loading && <h1>loading users...</h1>}
-    
     </div>
   );
 }
