@@ -4,7 +4,7 @@ import React from 'react';
 import NavBar from './Navbar';
 import ContactList from './ContactList';
 
-//renders the main app component
+//returns the main app component
 class App extends React.Component{
   constructor(){
     super();

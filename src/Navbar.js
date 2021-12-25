@@ -17,6 +17,7 @@ const NavBar=(props)=>{
     )
     };
 
+//inline styling
 const styles={
     nav:{ 
         height:70,
