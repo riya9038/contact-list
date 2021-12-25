@@ -11,51 +11,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.heading{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.heading img{
+  width:30px;
+  height: 30px;
+}
+.add{
+  background-color: black;
+  color:white;
+  border-radius: 4px;
+  height:45px;
+  border: 3px solid darkgray;
+  cursor: pointer;
+}
 .cart{
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  background-color: rgb(192, 182, 182);
+  background: url("https://media.istockphoto.com/photos/black-texture-background-picture-id895278132?k=20&m=895278132&s=170667a&w=0&h=mhJ7m5w0CvxKoWfqHilJFp_5D3pCOayHMWxUFTbJCIg=");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cart-item{
   width: 50%;
-  height: 50%;
+  height: 60%;
   /* background-color: red; */
-  display: inline-flex;
+  /* display: inline-flex; */
   margin: 50px;
+  background-color: rgb(63, 62, 61);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid black;
+  box-shadow: 0.5px 0.5px 7px 2px black;
 }
 .left-block{
-  width: 20%;
-  height: 100%;
-  /* background-color: yellow; */
-}
-/* .left-block img{
   width: 100%;
   height: 100%;
-  background-color: white;
-}  */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  /* background-color: yellow; */
+}
+.left-block div{
+  width: 40%;
+}
+.left-block button{
+  width: 12%;
+  height: 35px;
+  background-color: grey;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+} 
 .right-block{
-  width: 80%;
+  width: 100%;
   height: 100%;
+  margin-top: 15px;
+  /* border-top: 1px solid black; */
   /* background-color: green; */
   /* padding: 0 20px; */
 }
-.right-block div{
-  width: 90%;
-  height: 20%;
-  /* background-color: grey; */
-  /* margin: 10px; */
+.user-info{
+  width: 98%;
+  height: 45px;
+  background-color: rgb(41, 40, 40);
+  margin: 5px;
   text-align: left;
+  font-family: monospace;
+  font-size: 1.2rem;
+  box-shadow: -0.8px 0.8px 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
 }
 .cart-item-action{
   display: flex;
   width:40%;
   margin-top: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cart-item-action img{
+  margin: 10px;
 }
 .action-button{
-  width: 5%;
-  height: 5%;
-  margin-right: 5px;
+  width: 7%;
+  height: 85%;
+  /* margin-left: 15px; */
 }
 .action-button:hover{
   cursor: pointer;
