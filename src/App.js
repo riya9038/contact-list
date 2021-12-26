@@ -78,7 +78,7 @@ addUser=()=>{
   },
 })
   .then((response) => response.json())
-  .then((json) => this.setState((prevState)=>{return {users:[...prevState.users,json]}}))
+  .then((json) => this.setState((prevState)=>{return {users:[json, ...prevState.users]}}))
   .catch((error)=>{
     console.log('error',error);
   })
