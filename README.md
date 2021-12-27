@@ -1,7 +1,7 @@
 
 # Contact List App
 
-- This is a repository for Alarm Clock Developed using Vanilla JavaScript, HTML, CSS.
+- This is a repository for Contact List developed using ReactJS.
 
 - It is developed with interesting features to provide users a digital yet real-life experience.
 
