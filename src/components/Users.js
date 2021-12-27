@@ -1,6 +1,6 @@
 import React from 'react';
 
-//returns the user information  
+//returns the user information present in the fetched data
 const Users=(props)=>{
 
         const{name, phone, address,email,company,website}= props.user;
